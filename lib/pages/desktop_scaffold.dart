@@ -354,14 +354,14 @@ class _MobileScaffoldState extends State<DesktopScaffold> {
                                                 Container(
                                                   padding:
                                                       const EdgeInsets.all(5),
-                                                  child:
-                                                      const Text('45-55 мин'),
                                                   decoration: BoxDecoration(
                                                       color:
                                                           HexColor('#f6f6f6'),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               5)),
+                                                  child:
+                                                      const Text('45-55 мин'),
                                                 ),
                                                 const SizedBox(width: 10),
                                                 Container(
@@ -394,7 +394,19 @@ class _MobileScaffoldState extends State<DesktopScaffold> {
                                 ]),
                               ),
                             );
-                          })
+                          }),
+                      const SizedBox(height: 30),
+                      Expanded(
+                          child: Container(
+                        height: 60,
+                        color: HexColor('#54545a'),
+                        child: const Center(
+                          child: Text(
+                            'Показать еще рестораны',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      )),
                     ]),
                   )),
               Expanded(child: Container())
